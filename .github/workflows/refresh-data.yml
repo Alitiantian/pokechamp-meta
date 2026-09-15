@@ -4,6 +4,13 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '17 0 * * *'
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/refresh-data.mjs'
+      - 'data/name-map.zh-CN.json'
+      - '.github/workflows/refresh-data.yml'
 
 permissions:
   contents: write
@@ -17,6 +24,8 @@ jobs:
         with:
           node-version: 24
           package-manager-cache: false
+      - name: Check refresh script syntax
+        run: node --check scripts/refresh-data.mjs
       - name: Refresh source data
         run: npm run refresh:data
       - name: Validate snapshot
