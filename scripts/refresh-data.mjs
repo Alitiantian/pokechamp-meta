@@ -6,8 +6,7 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '..');
 const BASE = 'https://championsbattledata.com';
 const POKEMON_PAGE = `${BASE}/pokemon/`;
-const SPECIES_EN_URL = 'https://raw.githubusercontent.com/sindresorhus/pokemon/main/data/en.json';
-const SPECIES_ZH_URL = 'https://raw.githubusercontent.com/sindresorhus/pokemon/main/data/zh-hans.json';
+const SPECIES_NAMES_CSV_URL = 'https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/pokemon_species_names.csv';
 const today = new Date().toISOString().slice(0, 10);
 
 const nameMap = JSON.parse(await fs.readFile(path.join(root, 'data', 'name-map.zh-CN.json'), 'utf8'));
@@ -16,6 +15,46 @@ const translationByEnglish = new Map(
     .filter((entry) => entry?.en)
     .map((entry) => [normalizeId(entry.en), entry]),
 );
+
+const specialFormOverrides = new Map([
+  ['arcaninehisui', '风速狗（洗翠的样子）'],
+  ['typhlosionhisui', '火暴兽（洗翠的样子）'],
+  ['zoroarkhisui', '索罗亚克（洗翠的样子）'],
+  ['samurotthisui', '大剑鬼（洗翠的样子）'],
+  ['goodrahisui', '黏美龙（洗翠的样子）'],
+  ['decidueyehisui', '狙射树枭（洗翠的样子）'],
+  ['avalugghisui', '冰岩怪（洗翠的样子）'],
+  ['ninetalesalola', '九尾（阿罗拉的样子）'],
+  ['persianalola', '猫老大（阿罗拉的样子）'],
+  ['raichualola', '雷丘（阿罗拉的样子）'],
+  ['slowkinggalar', '呆呆王（伽勒尔的样子）'],
+  ['slowbrogalar', '呆壳兽（伽勒尔的样子）'],
+  ['stunfiskgalar', '泥巴鱼（伽勒尔的样子）'],
+  ['taurospaldeacombat', '肯泰罗（帕底亚的样子·斗战种）'],
+  ['taurospaldeablaze', '肯泰罗（帕底亚的样子·火炽种）'],
+  ['taurospaldeaaqua', '肯泰罗（帕底亚的样子·水澜种）'],
+  ['indeedee', '爱管侍♂'],
+  ['indeedeef', '爱管侍♀'],
+  ['basculegion', '幽尾玄鱼♂'],
+  ['basculegionf', '幽尾玄鱼♀'],
+  ['toxtricity', '颤弦蝾螈（高调的样子）'],
+  ['toxtricitylowkey', '颤弦蝾螈（低调的样子）'],
+  ['lycanrocdusk', '鬃岩狼人（黄昏的样子）'],
+  ['lycanrocmidnight', '鬃岩狼人（黑夜的样子）'],
+  ['vivillonfancy', '彩粉蝶（幻彩花纹）'],
+  ['mausholdfour', '一家鼠（四只家庭）'],
+  ['rotomheat', '加热洛托姆'],
+  ['rotomwash', '清洗洛托姆'],
+  ['rotomfrost', '结冰洛托姆'],
+  ['rotomfan', '旋转洛托姆'],
+  ['rotommow', '切割洛托姆'],
+  ['squawkabillyyellow', '怒鹦哥（黄羽毛）'],
+  ['gourgeist', '南瓜怪人（中颗种）'],
+  ['gourgeistsmall', '南瓜怪人（小颗种）'],
+  ['gourgeistlarge', '南瓜怪人（大颗种）'],
+  ['gourgeistsuper', '南瓜怪人（巨颗种）'],
+  ['floetteeternal', '花叶蒂（永恒之花）'],
+]);
 
 function normalizeId(value = '') {
   return String(value).toLowerCase().normalize('NFKD').replace(/[^a-z0-9]/g, '');
@@ -106,67 +145,77 @@ function assertSane(rows) {
   }
 }
 
+function parseCsvLine(line) {
+  const fields = [];
+  let current = '';
+  let quoted = false;
+  for (let i = 0; i < line.length; i += 1) {
+    const ch = line[i];
+    if (ch === '"') {
+      if (quoted && line[i + 1] === '"') {
+        current += '"';
+        i += 1;
+      } else {
+        quoted = !quoted;
+      }
+    } else if (ch === ',' && !quoted) {
+      fields.push(current);
+      current = '';
+    } else {
+      current += ch;
+    }
+  }
+  fields.push(current);
+  return fields;
+}
+
 async function fetchText(url) {
   const response = await fetch(url, {
-    headers: { 'user-agent': 'pokechamp-meta/1.2 (+community ranking tool)' },
+    headers: { 'user-agent': 'pokechamp-meta/1.3 (+community ranking tool)' },
   });
   if (!response.ok) throw new Error(`${url} -> HTTP ${response.status}`);
   return response.text();
 }
 
-async function fetchJson(url) {
-  return JSON.parse(await fetchText(url));
-}
-
 async function loadCanonicalSpeciesTranslations() {
   try {
-    const [english, chinese] = await Promise.all([
-      fetchJson(SPECIES_EN_URL),
-      fetchJson(SPECIES_ZH_URL),
-    ]);
-    if (!Array.isArray(english) || !Array.isArray(chinese) || english.length !== chinese.length || english.length < 1000) {
-      throw new Error(`物种名称表结构异常：en=${english?.length}, zh=${chinese?.length}`);
+    const csv = await fetchText(SPECIES_NAMES_CSV_URL);
+    const bySpecies = new Map();
+    for (const line of csv.split(/\r?\n/).slice(1)) {
+      if (!line) continue;
+      const [speciesId, languageId, name] = parseCsvLine(line);
+      if (!speciesId || !languageId || !name) continue;
+      const lang = Number(languageId);
+      if (lang !== 9 && lang !== 12) continue;
+      const entry = bySpecies.get(speciesId) || {};
+      if (lang === 9) entry.en = name;
+      if (lang === 12) entry.zh = name;
+      bySpecies.set(speciesId, entry);
     }
+
     const map = new Map();
-    english.forEach((name, i) => {
-      if (name && chinese[i]) map.set(normalizeId(name), chinese[i]);
-    });
+    for (const entry of bySpecies.values()) {
+      if (entry.en && entry.zh) map.set(normalizeId(entry.en), entry.zh);
+    }
+    if (map.size < 900) {
+      throw new Error(`PokeAPI 简中名称表解析数量异常：${map.size}`);
+    }
     return map;
   } catch (error) {
-    console.warn(`全国图鉴简中名称表加载失败，将仅使用本地覆写：${error.message}`);
+    console.warn(`PokeAPI 全国图鉴简中名称表加载失败，将仅使用本地覆写：${error.message}`);
     return new Map();
   }
 }
 
-const formLabels = new Map([
-  ['alola', '阿罗拉'],
-  ['galar', '伽勒尔'],
-  ['hisui', '洗翠'],
-  ['paldea', '帕底亚'],
-  ['f', '♀'],
-  ['m', '♂'],
-  ['four', '四只家庭'],
-  ['three', '三只家庭'],
-  ['low-key', '低调的样子'],
-  ['amped', '高调的样子'],
-  ['fancy', '幻彩花纹'],
-]);
-
 function resolveChineseName(row, canonicalSpecies) {
-  const override = nameMap[row.id] || translationByEnglish.get(normalizeId(row.nameEn));
-  if (override?.zh) return override.zh;
+  const auditedForm = specialFormOverrides.get(row.id);
+  if (auditedForm) return auditedForm;
 
   const exact = canonicalSpecies.get(normalizeId(row.nameEn));
   if (exact) return exact;
 
-  const parts = row.nameEn.split('-');
-  for (let cut = parts.length - 1; cut >= 1; cut -= 1) {
-    const baseEn = parts.slice(0, cut).join('-');
-    const suffix = parts.slice(cut).join('-').toLowerCase();
-    const baseZh = canonicalSpecies.get(normalizeId(baseEn));
-    const label = formLabels.get(suffix);
-    if (baseZh && label) return `${baseZh}（${label}）`;
-  }
+  const localOverride = nameMap[row.id] || translationByEnglish.get(normalizeId(row.nameEn));
+  if (localOverride?.zh) return localOverride.zh;
 
   return row.nameEn;
 }
@@ -184,16 +233,13 @@ const sourceRows = parsed.filter((row) => {
 assertSane(sourceRows);
 const canonicalSpecies = await loadCanonicalSpeciesTranslations();
 
-const pokemon = sourceRows.map((row) => {
-  const localOverride = nameMap[row.id] || translationByEnglish.get(normalizeId(row.nameEn));
-  return {
-    id: row.id,
-    nameZh: resolveChineseName(row, canonicalSpecies),
-    nameEn: localOverride?.en || row.nameEn,
-    singlesRank: row.singlesRank,
-    doublesRank: row.doublesRank,
-  };
-});
+const pokemon = sourceRows.map((row) => ({
+  id: row.id,
+  nameZh: resolveChineseName(row, canonicalSpecies),
+  nameEn: row.nameEn,
+  singlesRank: row.singlesRank,
+  doublesRank: row.doublesRank,
+}));
 
 const untranslated = pokemon.filter((p) => p.nameZh === p.nameEn).map((p) => p.nameEn);
 if (untranslated.length) {
@@ -216,10 +262,11 @@ const current = {
       language: 'zh-Hans',
       translated: pokemon.length - untranslated.length,
       untranslated: untranslated.length,
-      baseNameSource: 'sindresorhus/pokemon',
+      baseNameSource: 'PokeAPI pokemon_species_names.csv (zh-hans)',
+      formNamePolicy: 'audited-overrides-only',
     },
     refreshMethod: 'pokemon-index-table',
-    note: 'Ranks come from the upstream Pokémon index table. Simplified Chinese species names use local form overrides plus a complete National Pokédex base-name list.',
+    note: 'Ranks come from the upstream Pokémon index table. Simplified Chinese species names come from PokeAPI zh-hans data; special forms use audited local overrides rather than automatic label composition.',
   },
   pokemon,
 };
