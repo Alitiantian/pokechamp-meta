@@ -37,6 +37,8 @@ const specialFormOverrides = new Map([
   ['indeedeef', '爱管侍♀'],
   ['basculegion', '幽尾玄鱼♂'],
   ['basculegionf', '幽尾玄鱼♀'],
+  ['meowstic', '超能妙喵（雄性的样子）'],
+  ['meowsticf', '超能妙喵（雌性的样子）'],
   ['toxtricity', '颤弦蝾螈（高调的样子）'],
   ['toxtricitylowkey', '颤弦蝾螈（低调的样子）'],
   ['lycanrocdusk', '鬃岩狼人（黄昏的样子）'],
