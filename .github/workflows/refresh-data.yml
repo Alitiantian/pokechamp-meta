@@ -1,0 +1,34 @@
+name: Refresh rankings
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 0 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Refresh source data
+        run: npm run refresh:data
+      - name: Validate snapshot
+        run: npm run validate
+      - name: Commit when data changed
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/current.json data/history data/name-map.zh-CN.json
+          git commit -m "data: refresh rankings $(date -u +%F)"
+          git push
