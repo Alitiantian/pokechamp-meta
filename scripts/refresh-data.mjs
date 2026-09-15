@@ -6,6 +6,8 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '..');
 const BASE = 'https://championsbattledata.com';
 const POKEMON_PAGE = `${BASE}/pokemon/`;
+const SPECIES_EN_URL = 'https://raw.githubusercontent.com/sindresorhus/pokemon/main/data/en.json';
+const SPECIES_ZH_URL = 'https://raw.githubusercontent.com/sindresorhus/pokemon/main/data/zh-hans.json';
 const today = new Date().toISOString().slice(0, 10);
 
 const nameMap = JSON.parse(await fs.readFile(path.join(root, 'data', 'name-map.zh-CN.json'), 'utf8'));
@@ -106,10 +108,67 @@ function assertSane(rows) {
 
 async function fetchText(url) {
   const response = await fetch(url, {
-    headers: { 'user-agent': 'pokechamp-meta/1.1 (+community ranking tool)' },
+    headers: { 'user-agent': 'pokechamp-meta/1.2 (+community ranking tool)' },
   });
   if (!response.ok) throw new Error(`${url} -> HTTP ${response.status}`);
   return response.text();
+}
+
+async function fetchJson(url) {
+  return JSON.parse(await fetchText(url));
+}
+
+async function loadCanonicalSpeciesTranslations() {
+  try {
+    const [english, chinese] = await Promise.all([
+      fetchJson(SPECIES_EN_URL),
+      fetchJson(SPECIES_ZH_URL),
+    ]);
+    if (!Array.isArray(english) || !Array.isArray(chinese) || english.length !== chinese.length || english.length < 1000) {
+      throw new Error(`物种名称表结构异常：en=${english?.length}, zh=${chinese?.length}`);
+    }
+    const map = new Map();
+    english.forEach((name, i) => {
+      if (name && chinese[i]) map.set(normalizeId(name), chinese[i]);
+    });
+    return map;
+  } catch (error) {
+    console.warn(`全国图鉴简中名称表加载失败，将仅使用本地覆写：${error.message}`);
+    return new Map();
+  }
+}
+
+const formLabels = new Map([
+  ['alola', '阿罗拉'],
+  ['galar', '伽勒尔'],
+  ['hisui', '洗翠'],
+  ['paldea', '帕底亚'],
+  ['f', '♀'],
+  ['m', '♂'],
+  ['four', '四只家庭'],
+  ['three', '三只家庭'],
+  ['low-key', '低调的样子'],
+  ['amped', '高调的样子'],
+  ['fancy', '幻彩花纹'],
+]);
+
+function resolveChineseName(row, canonicalSpecies) {
+  const override = nameMap[row.id] || translationByEnglish.get(normalizeId(row.nameEn));
+  if (override?.zh) return override.zh;
+
+  const exact = canonicalSpecies.get(normalizeId(row.nameEn));
+  if (exact) return exact;
+
+  const parts = row.nameEn.split('-');
+  for (let cut = parts.length - 1; cut >= 1; cut -= 1) {
+    const baseEn = parts.slice(0, cut).join('-');
+    const suffix = parts.slice(cut).join('-').toLowerCase();
+    const baseZh = canonicalSpecies.get(normalizeId(baseEn));
+    const label = formLabels.get(suffix);
+    if (baseZh && label) return `${baseZh}（${label}）`;
+  }
+
+  return row.nameEn;
 }
 
 const html = await fetchText(POKEMON_PAGE);
@@ -123,17 +182,23 @@ const sourceRows = parsed.filter((row) => {
 });
 
 assertSane(sourceRows);
+const canonicalSpecies = await loadCanonicalSpeciesTranslations();
 
 const pokemon = sourceRows.map((row) => {
-  const translation = nameMap[row.id] || translationByEnglish.get(normalizeId(row.nameEn));
+  const localOverride = nameMap[row.id] || translationByEnglish.get(normalizeId(row.nameEn));
   return {
     id: row.id,
-    nameZh: translation?.zh || row.nameEn,
-    nameEn: translation?.en || row.nameEn,
+    nameZh: resolveChineseName(row, canonicalSpecies),
+    nameEn: localOverride?.en || row.nameEn,
     singlesRank: row.singlesRank,
     doublesRank: row.doublesRank,
   };
 });
+
+const untranslated = pokemon.filter((p) => p.nameZh === p.nameEn).map((p) => p.nameEn);
+if (untranslated.length) {
+  console.warn(`仍有 ${untranslated.length} 个名称未汉化：${untranslated.join(', ')}`);
+}
 
 const current = {
   meta: {
@@ -147,8 +212,14 @@ const current = {
       apiGuide: `${BASE}/api_guide`,
       rankingPage: POKEMON_PAGE,
     },
+    localization: {
+      language: 'zh-Hans',
+      translated: pokemon.length - untranslated.length,
+      untranslated: untranslated.length,
+      baseNameSource: 'sindresorhus/pokemon',
+    },
     refreshMethod: 'pokemon-index-table',
-    note: 'Ranks are read from the upstream Pokémon index table, which explicitly exposes Doubles rank and Singles rank for tracked ranked Pokémon.',
+    note: 'Ranks come from the upstream Pokémon index table. Simplified Chinese species names use local form overrides plus a complete National Pokédex base-name list.',
   },
   pokemon,
 };
@@ -176,4 +247,4 @@ const history = {
 await fs.mkdir(path.join(root, 'data', 'history'), { recursive: true });
 await fs.writeFile(path.join(root, 'data', 'history', `${today}.json`), `${JSON.stringify(history, null, 2)}\n`);
 
-console.log(`刷新完成：${pokemon.length} 条，方式=pokemon-index-table，日期=${today}`);
+console.log(`刷新完成：${pokemon.length} 条，汉化 ${pokemon.length - untranslated.length}/${pokemon.length}，方式=pokemon-index-table，日期=${today}`);
