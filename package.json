@@ -1,0 +1,11 @@
+{
+  "name": "pokechamp-meta",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-data.mjs",
+    "refresh:data": "node scripts/refresh-data.mjs",
+    "serve": "python -m http.server 4173"
+  }
+}
