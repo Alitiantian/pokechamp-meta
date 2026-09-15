@@ -6,6 +6,10 @@ Pokémon Champions 的跨赛制 Meta 排名工具。默认按 **单打 20% + 双
 - **Top-heavy**：基于 Reciprocal Rank Fusion 思路，提高 Top 区域的权重。
 - **双栖价值**：在 Top-heavy 基础上奖励单双打都靠前的宝可梦。
 
+## 在线版本
+
+https://pokechamp-meta.vercel.app
+
 ## 数据结构
 
 - `data/current.json`：网站使用的最新缓存。
