@@ -3,7 +3,7 @@
     "schemaVersion": 2,
     "season": "Current",
     "snapshotDate": "2026-09-15",
-    "generatedAt": "2026-09-15T11:10:24.734Z",
+    "generatedAt": "2026-09-15T11:11:52.552Z",
     "source": {
       "name": "Pokémon Champions Battle Data",
       "url": "https://championsbattledata.com",
@@ -12,8 +12,8 @@
     },
     "localization": {
       "language": "zh-Hans",
-      "translated": 261,
-      "untranslated": 1,
+      "translated": 262,
+      "untranslated": 0,
       "baseNameSource": "PokeAPI pokemon_species_names.csv (zh-hans)",
       "formNamePolicy": "audited-overrides-only"
     },
@@ -786,7 +786,7 @@
     },
     {
       "id": "meowstic",
-      "nameZh": "超能妙喵",
+      "nameZh": "超能妙喵（雄性的样子）",
       "nameEn": "Meowstic",
       "singlesRank": 202,
       "doublesRank": 110
@@ -835,7 +835,7 @@
     },
     {
       "id": "meowsticf",
-      "nameZh": "Meowstic-F",
+      "nameZh": "超能妙喵（雌性的样子）",
       "nameEn": "Meowstic-F",
       "singlesRank": 229,
       "doublesRank": 117
