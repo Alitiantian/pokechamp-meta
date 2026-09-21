@@ -240,14 +240,35 @@ function bindEvents() {
   });
 
   const search = document.querySelector('#search');
-  search?.addEventListener('input', (event) => {
-    const value = event.target.value;
+  let isComposing = false;
+
+  function applySearch(value, caret = null) {
     state.query = value;
-    const caret = event.target.selectionStart;
     render();
     const next = document.querySelector('#search');
     next?.focus();
     if (caret !== null) next?.setSelectionRange(caret, caret);
+  }
+
+  search?.addEventListener('compositionstart', () => {
+    isComposing = true;
+  });
+
+  search?.addEventListener('compositionend', (event) => {
+    isComposing = false;
+    const value = event.target.value;
+    const caret = event.target.selectionStart;
+    applySearch(value, caret);
+  });
+
+  search?.addEventListener('input', (event) => {
+    // 中文、日文、韩文等 IME 在 composition 阶段会连续触发 input。
+    // 此时绝不能 render()，否则搜索框 DOM 被替换，输入法会被强制提交为字母。
+    if (isComposing || event.isComposing) return;
+
+    const value = event.target.value;
+    const caret = event.target.selectionStart;
+    applySearch(value, caret);
   });
 }
 
