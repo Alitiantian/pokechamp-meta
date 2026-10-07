@@ -1,0 +1,515 @@
+{
+  "meta": {
+    "schemaVersion": 1,
+    "season": "Current",
+    "snapshotDate": "2026-10-07",
+    "kind": "derived-ranking-history",
+    "sourceName": "Pokémon Champions Battle Data"
+  },
+  "defaultWeights": {
+    "singles": 20,
+    "doubles": 80
+  },
+  "ranking": [
+    {
+      "id": "rillaboom",
+      "combinedRank": 1,
+      "linearScore": 3
+    },
+    {
+      "id": "salamence",
+      "combinedRank": 2,
+      "linearScore": 3.6
+    },
+    {
+      "id": "sneasler",
+      "combinedRank": 3,
+      "linearScore": 4.8
+    },
+    {
+      "id": "garchomp",
+      "combinedRank": 4,
+      "linearScore": 5
+    },
+    {
+      "id": "gholdengo",
+      "combinedRank": 5,
+      "linearScore": 8.2
+    },
+    {
+      "id": "golisopod",
+      "combinedRank": 6,
+      "linearScore": 9.2
+    },
+    {
+      "id": "archaludon",
+      "combinedRank": 7,
+      "linearScore": 10.4
+    },
+    {
+      "id": "basculegion",
+      "combinedRank": 8,
+      "linearScore": 11.2
+    },
+    {
+      "id": "kingambit",
+      "combinedRank": 9,
+      "linearScore": 12.6
+    },
+    {
+      "id": "charizard",
+      "combinedRank": 10,
+      "linearScore": 14.4
+    },
+    {
+      "id": "raichu",
+      "combinedRank": 11,
+      "linearScore": 17.8
+    },
+    {
+      "id": "pelipper",
+      "combinedRank": 12,
+      "linearScore": 18.8
+    },
+    {
+      "id": "incineroar",
+      "combinedRank": 13,
+      "linearScore": 19.4
+    },
+    {
+      "id": "milotic",
+      "combinedRank": 14,
+      "linearScore": 21
+    },
+    {
+      "id": "indeedeef",
+      "combinedRank": 15,
+      "linearScore": 21.6
+    },
+    {
+      "id": "sylveon",
+      "combinedRank": 16,
+      "linearScore": 22
+    },
+    {
+      "id": "tyranitar",
+      "combinedRank": 17,
+      "linearScore": 24
+    },
+    {
+      "id": "indeedee",
+      "combinedRank": 18,
+      "linearScore": 24.4
+    },
+    {
+      "id": "volcarona",
+      "combinedRank": 19,
+      "linearScore": 25
+    },
+    {
+      "id": "metagross",
+      "combinedRank": 20,
+      "linearScore": 25.4
+    },
+    {
+      "id": "staraptor",
+      "combinedRank": 21,
+      "linearScore": 26.6
+    },
+    {
+      "id": "lucario",
+      "combinedRank": 22,
+      "linearScore": 28.2
+    },
+    {
+      "id": "gardevoir",
+      "combinedRank": 23,
+      "linearScore": 29.6
+    },
+    {
+      "id": "armarouge",
+      "combinedRank": 24,
+      "linearScore": 29.8
+    },
+    {
+      "id": "whimsicott",
+      "combinedRank": 25,
+      "linearScore": 31
+    },
+    {
+      "id": "swampert",
+      "combinedRank": 26,
+      "linearScore": 32.6
+    },
+    {
+      "id": "baxcalibur",
+      "combinedRank": 27,
+      "linearScore": 32.8
+    },
+    {
+      "id": "primarina",
+      "combinedRank": 28,
+      "linearScore": 33.4
+    },
+    {
+      "id": "arcaninehisui",
+      "combinedRank": 29,
+      "linearScore": 34
+    },
+    {
+      "id": "dragonite",
+      "combinedRank": 30,
+      "linearScore": 34.2
+    },
+    {
+      "id": "gengar",
+      "combinedRank": 31,
+      "linearScore": 34.8
+    },
+    {
+      "id": "ninetalesalola",
+      "combinedRank": 32,
+      "linearScore": 35.6
+    },
+    {
+      "id": "grimmsnarl",
+      "combinedRank": 33,
+      "linearScore": 36
+    },
+    {
+      "id": "floetteeternal",
+      "combinedRank": 34,
+      "linearScore": 36.4
+    },
+    {
+      "id": "excadrill",
+      "combinedRank": 35,
+      "linearScore": 36.8
+    },
+    {
+      "id": "glimmora",
+      "combinedRank": 36,
+      "linearScore": 38.2
+    },
+    {
+      "id": "corviknight",
+      "combinedRank": 37,
+      "linearScore": 38.8
+    },
+    {
+      "id": "sinistcha",
+      "combinedRank": 38,
+      "linearScore": 42.2
+    },
+    {
+      "id": "blastoise",
+      "combinedRank": 39,
+      "linearScore": 43.4
+    },
+    {
+      "id": "venusaur",
+      "combinedRank": 40,
+      "linearScore": 43.6
+    },
+    {
+      "id": "froslass",
+      "combinedRank": 41,
+      "linearScore": 44.6
+    },
+    {
+      "id": "pawmot",
+      "combinedRank": 42,
+      "linearScore": 44.6
+    },
+    {
+      "id": "politoed",
+      "combinedRank": 43,
+      "linearScore": 44.8
+    },
+    {
+      "id": "delphox",
+      "combinedRank": 44,
+      "linearScore": 45
+    },
+    {
+      "id": "torkoal",
+      "combinedRank": 45,
+      "linearScore": 45.2
+    },
+    {
+      "id": "sableye",
+      "combinedRank": 46,
+      "linearScore": 48.4
+    },
+    {
+      "id": "farigiraf",
+      "combinedRank": 47,
+      "linearScore": 51.2
+    },
+    {
+      "id": "dragapult",
+      "combinedRank": 48,
+      "linearScore": 51.8
+    },
+    {
+      "id": "annihilape",
+      "combinedRank": 49,
+      "linearScore": 53.4
+    },
+    {
+      "id": "hydreigon",
+      "combinedRank": 50,
+      "linearScore": 53.6
+    },
+    {
+      "id": "absol",
+      "combinedRank": 51,
+      "linearScore": 54.2
+    },
+    {
+      "id": "meowscarada",
+      "combinedRank": 52,
+      "linearScore": 54.6
+    },
+    {
+      "id": "blaziken",
+      "combinedRank": 53,
+      "linearScore": 55
+    },
+    {
+      "id": "ceruledge",
+      "combinedRank": 54,
+      "linearScore": 56
+    },
+    {
+      "id": "hatterene",
+      "combinedRank": 55,
+      "linearScore": 57.2
+    },
+    {
+      "id": "mausholdfour",
+      "combinedRank": 56,
+      "linearScore": 60.6
+    },
+    {
+      "id": "mawile",
+      "combinedRank": 57,
+      "linearScore": 60.8
+    },
+    {
+      "id": "mimikyu",
+      "combinedRank": 58,
+      "linearScore": 61.2
+    },
+    {
+      "id": "rotomwash",
+      "combinedRank": 59,
+      "linearScore": 61.6
+    },
+    {
+      "id": "aerodactyl",
+      "combinedRank": 60,
+      "linearScore": 62.2
+    },
+    {
+      "id": "zoroarkhisui",
+      "combinedRank": 61,
+      "linearScore": 64.2
+    },
+    {
+      "id": "empoleon",
+      "combinedRank": 62,
+      "linearScore": 66.6
+    },
+    {
+      "id": "inteleon",
+      "combinedRank": 63,
+      "linearScore": 67.6
+    },
+    {
+      "id": "gallade",
+      "combinedRank": 64,
+      "linearScore": 67.8
+    },
+    {
+      "id": "espathra",
+      "combinedRank": 65,
+      "linearScore": 67.8
+    },
+    {
+      "id": "sirfetchd",
+      "combinedRank": 66,
+      "linearScore": 68.2
+    },
+    {
+      "id": "kommoo",
+      "combinedRank": 67,
+      "linearScore": 70
+    },
+    {
+      "id": "aegislash",
+      "combinedRank": 68,
+      "linearScore": 70.6
+    },
+    {
+      "id": "talonflame",
+      "combinedRank": 69,
+      "linearScore": 70.8
+    },
+    {
+      "id": "scizor",
+      "combinedRank": 70,
+      "linearScore": 72.4
+    },
+    {
+      "id": "kleavor",
+      "combinedRank": 71,
+      "linearScore": 72.8
+    },
+    {
+      "id": "cinderace",
+      "combinedRank": 72,
+      "linearScore": 73
+    },
+    {
+      "id": "vivillonfancy",
+      "combinedRank": 73,
+      "linearScore": 75.4
+    },
+    {
+      "id": "clefable",
+      "combinedRank": 74,
+      "linearScore": 76.6
+    },
+    {
+      "id": "typhlosionhisui",
+      "combinedRank": 75,
+      "linearScore": 77
+    },
+    {
+      "id": "toxapex",
+      "combinedRank": 76,
+      "linearScore": 77.4
+    },
+    {
+      "id": "greninja",
+      "combinedRank": 77,
+      "linearScore": 77.6
+    },
+    {
+      "id": "gyarados",
+      "combinedRank": 78,
+      "linearScore": 78
+    },
+    {
+      "id": "alakazam",
+      "combinedRank": 79,
+      "linearScore": 79
+    },
+    {
+      "id": "scovillain",
+      "combinedRank": 80,
+      "linearScore": 79
+    },
+    {
+      "id": "basculegionf",
+      "combinedRank": 81,
+      "linearScore": 81.8
+    },
+    {
+      "id": "grapploct",
+      "combinedRank": 82,
+      "linearScore": 82.2
+    },
+    {
+      "id": "chandelure",
+      "combinedRank": 83,
+      "linearScore": 82.6
+    },
+    {
+      "id": "goodrahisui",
+      "combinedRank": 84,
+      "linearScore": 83
+    },
+    {
+      "id": "weavile",
+      "combinedRank": 85,
+      "linearScore": 84.4
+    },
+    {
+      "id": "meganium",
+      "combinedRank": 86,
+      "linearScore": 85.8
+    },
+    {
+      "id": "toxtricity",
+      "combinedRank": 87,
+      "linearScore": 86.6
+    },
+    {
+      "id": "kangaskhan",
+      "combinedRank": 88,
+      "linearScore": 87.2
+    },
+    {
+      "id": "mamoswine",
+      "combinedRank": 89,
+      "linearScore": 88.4
+    },
+    {
+      "id": "snorlax",
+      "combinedRank": 90,
+      "linearScore": 89.2
+    },
+    {
+      "id": "rotomheat",
+      "combinedRank": 91,
+      "linearScore": 89.2
+    },
+    {
+      "id": "samurotthisui",
+      "combinedRank": 92,
+      "linearScore": 89.8
+    },
+    {
+      "id": "bellibolt",
+      "combinedRank": 93,
+      "linearScore": 90
+    },
+    {
+      "id": "camerupt",
+      "combinedRank": 94,
+      "linearScore": 90.8
+    },
+    {
+      "id": "pincurchin",
+      "combinedRank": 95,
+      "linearScore": 90.8
+    },
+    {
+      "id": "tsareena",
+      "combinedRank": 96,
+      "linearScore": 92.8
+    },
+    {
+      "id": "lopunny",
+      "combinedRank": 97,
+      "linearScore": 93.8
+    },
+    {
+      "id": "malamar",
+      "combinedRank": 98,
+      "linearScore": 94.4
+    },
+    {
+      "id": "overqwil",
+      "combinedRank": 99,
+      "linearScore": 100
+    },
+    {
+      "id": "sceptile",
+      "combinedRank": 100,
+      "linearScore": 101
+    }
+  ]
+}
