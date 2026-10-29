@@ -2,8 +2,8 @@
   "meta": {
     "schemaVersion": 2,
     "season": "Current",
-    "snapshotDate": "2026-10-28",
-    "generatedAt": "2026-10-28T05:36:31.657Z",
+    "snapshotDate": "2026-10-29",
+    "generatedAt": "2026-10-29T05:42:57.005Z",
     "source": {
       "name": "Pokémon Champions Battle Data",
       "url": "https://championsbattledata.com",
@@ -12,7 +12,7 @@
     },
     "localization": {
       "language": "zh-Hans",
-      "translated": 262,
+      "translated": 263,
       "untranslated": 0,
       "baseNameSource": "PokeAPI pokemon_species_names.csv (zh-hans)",
       "formNamePolicy": "audited-overrides-only"
@@ -78,31 +78,31 @@
       "doublesRank": 8
     },
     {
-      "id": "indeedeef",
-      "nameZh": "爱管侍♀",
-      "nameEn": "Indeedee-F",
-      "singlesRank": 115,
-      "doublesRank": 9
-    },
-    {
       "id": "kingambit",
       "nameZh": "仆刀将军",
       "nameEn": "Kingambit",
       "singlesRank": 39,
-      "doublesRank": 10
+      "doublesRank": 9
     },
     {
-      "id": "basculegion",
-      "nameZh": "幽尾玄鱼♂",
-      "nameEn": "Basculegion",
-      "singlesRank": 10,
-      "doublesRank": 11
+      "id": "indeedeef",
+      "nameZh": "爱管侍♀",
+      "nameEn": "Indeedee-F",
+      "singlesRank": 118,
+      "doublesRank": 10
     },
     {
       "id": "whimsicott",
       "nameZh": "风妖精",
       "nameEn": "Whimsicott",
       "singlesRank": 85,
+      "doublesRank": 11
+    },
+    {
+      "id": "basculegion",
+      "nameZh": "幽尾玄鱼♂",
+      "nameEn": "Basculegion",
+      "singlesRank": 9,
       "doublesRank": 12
     },
     {
@@ -116,14 +116,14 @@
       "id": "farigiraf",
       "nameZh": "奇麒麟",
       "nameEn": "Farigiraf",
-      "singlesRank": 207,
+      "singlesRank": 205,
       "doublesRank": 14
     },
     {
       "id": "gholdengo",
       "nameZh": "赛富豪",
       "nameEn": "Gholdengo",
-      "singlesRank": 9,
+      "singlesRank": 10,
       "doublesRank": 15
     },
     {
@@ -137,7 +137,7 @@
       "id": "tyranitar",
       "nameZh": "班基拉斯",
       "nameEn": "Tyranitar",
-      "singlesRank": 44,
+      "singlesRank": 43,
       "doublesRank": 17
     },
     {
@@ -172,7 +172,7 @@
       "id": "volcarona",
       "nameZh": "火神蛾",
       "nameEn": "Volcarona",
-      "singlesRank": 36,
+      "singlesRank": 33,
       "doublesRank": 22
     },
     {
@@ -186,21 +186,21 @@
       "id": "grimmsnarl",
       "nameZh": "长毛巨魔",
       "nameEn": "Grimmsnarl",
-      "singlesRank": 52,
+      "singlesRank": 53,
       "doublesRank": 24
-    },
-    {
-      "id": "gardevoir",
-      "nameZh": "沙奈朵",
-      "nameEn": "Gardevoir",
-      "singlesRank": 71,
-      "doublesRank": 25
     },
     {
       "id": "sinistcha",
       "nameZh": "来悲粗茶",
       "nameEn": "Sinistcha",
       "singlesRank": 111,
+      "doublesRank": 25
+    },
+    {
+      "id": "gardevoir",
+      "nameZh": "沙奈朵",
+      "nameEn": "Gardevoir",
+      "singlesRank": 71,
       "doublesRank": 26
     },
     {
@@ -228,42 +228,49 @@
       "id": "floetteeternal",
       "nameZh": "花叶蒂（永恒之花）",
       "nameEn": "Floette-Eternal",
-      "singlesRank": 35,
+      "singlesRank": 36,
       "doublesRank": 30
-    },
-    {
-      "id": "politoed",
-      "nameZh": "蚊香蛙皇",
-      "nameEn": "Politoed",
-      "singlesRank": 110,
-      "doublesRank": 31
-    },
-    {
-      "id": "dragonite",
-      "nameZh": "快龙",
-      "nameEn": "Dragonite",
-      "singlesRank": 12,
-      "doublesRank": 32
     },
     {
       "id": "basculegionf",
       "nameZh": "幽尾玄鱼♀",
       "nameEn": "Basculegion-F",
       "singlesRank": 116,
+      "doublesRank": 31
+    },
+    {
+      "id": "maushold",
+      "nameZh": "一家鼠",
+      "nameEn": "Maushold",
+      "singlesRank": 91,
+      "doublesRank": 31
+    },
+    {
+      "id": "politoed",
+      "nameZh": "蚊香蛙皇",
+      "nameEn": "Politoed",
+      "singlesRank": 106,
+      "doublesRank": 32
+    },
+    {
+      "id": "dragonite",
+      "nameZh": "快龙",
+      "nameEn": "Dragonite",
+      "singlesRank": 12,
       "doublesRank": 33
     },
     {
       "id": "swampert",
       "nameZh": "巨沼怪",
       "nameEn": "Swampert",
-      "singlesRank": 33,
+      "singlesRank": 34,
       "doublesRank": 34
     },
     {
       "id": "torkoal",
       "nameZh": "煤炭龟",
       "nameEn": "Torkoal",
-      "singlesRank": 118,
+      "singlesRank": 119,
       "doublesRank": 35
     },
     {
@@ -340,14 +347,14 @@
       "id": "aerodactyl",
       "nameZh": "化石翼龙",
       "nameEn": "Aerodactyl",
-      "singlesRank": 147,
+      "singlesRank": 146,
       "doublesRank": 46
     },
     {
       "id": "blastoise",
       "nameZh": "水箭龟",
       "nameEn": "Blastoise",
-      "singlesRank": 34,
+      "singlesRank": 35,
       "doublesRank": 47
     },
     {
@@ -403,7 +410,7 @@
       "id": "sceptile",
       "nameZh": "蜥蜴王",
       "nameEn": "Sceptile",
-      "singlesRank": 99,
+      "singlesRank": 101,
       "doublesRank": 55
     },
     {
@@ -414,17 +421,17 @@
       "doublesRank": 56
     },
     {
-      "id": "rotomheat",
-      "nameZh": "加热洛托姆",
-      "nameEn": "Rotom-Heat",
-      "singlesRank": 26,
-      "doublesRank": 57
-    },
-    {
       "id": "absol",
       "nameZh": "阿勃梭鲁",
       "nameEn": "Absol",
       "singlesRank": 64,
+      "doublesRank": 57
+    },
+    {
+      "id": "rotomheat",
+      "nameZh": "加热洛托姆",
+      "nameEn": "Rotom-Heat",
+      "singlesRank": 26,
       "doublesRank": 58
     },
     {
@@ -466,14 +473,14 @@
       "id": "vivillonfancy",
       "nameZh": "彩粉蝶（幻彩花纹）",
       "nameEn": "Vivillon-Fancy",
-      "singlesRank": 109,
+      "singlesRank": 108,
       "doublesRank": 64
     },
     {
       "id": "typhlosionhisui",
       "nameZh": "火暴兽（洗翠的样子）",
       "nameEn": "Typhlosion-Hisui",
-      "singlesRank": 150,
+      "singlesRank": 149,
       "doublesRank": 65
     },
     {
@@ -515,14 +522,14 @@
       "id": "gliscor",
       "nameZh": "天蝎王",
       "nameEn": "Gliscor",
-      "singlesRank": 119,
+      "singlesRank": 117,
       "doublesRank": 71
     },
     {
       "id": "rotomwash",
       "nameZh": "清洗洛托姆",
       "nameEn": "Rotom-Wash",
-      "singlesRank": 28,
+      "singlesRank": 27,
       "doublesRank": 72
     },
     {
@@ -543,7 +550,7 @@
       "id": "drampa",
       "nameZh": "老翁龙",
       "nameEn": "Drampa",
-      "singlesRank": 190,
+      "singlesRank": 191,
       "doublesRank": 75
     },
     {
@@ -571,21 +578,21 @@
       "id": "alakazam",
       "nameZh": "胡地",
       "nameEn": "Alakazam",
-      "singlesRank": 113,
+      "singlesRank": 114,
       "doublesRank": 79
     },
     {
       "id": "grapploct",
       "nameZh": "八爪武师",
       "nameEn": "Grapploct",
-      "singlesRank": 125,
+      "singlesRank": 126,
       "doublesRank": 80
     },
     {
       "id": "greninja",
       "nameZh": "甲贺忍蛙",
       "nameEn": "Greninja",
-      "singlesRank": 27,
+      "singlesRank": 28,
       "doublesRank": 81
     },
     {
@@ -599,14 +606,14 @@
       "id": "inteleon",
       "nameZh": "千面避役",
       "nameEn": "Inteleon",
-      "singlesRank": 117,
+      "singlesRank": 115,
       "doublesRank": 83
     },
     {
       "id": "chandelure",
       "nameZh": "水晶灯火灵",
       "nameEn": "Chandelure",
-      "singlesRank": 102,
+      "singlesRank": 99,
       "doublesRank": 84
     },
     {
@@ -620,28 +627,28 @@
       "id": "weavile",
       "nameZh": "玛狃拉",
       "nameEn": "Weavile",
-      "singlesRank": 126,
+      "singlesRank": 127,
       "doublesRank": 86
     },
     {
-      "id": "goodrahisui",
-      "nameZh": "黏美龙（洗翠的样子）",
-      "nameEn": "Goodra-Hisui",
-      "singlesRank": 54,
+      "id": "snorlax",
+      "nameZh": "卡比兽",
+      "nameEn": "Snorlax",
+      "singlesRank": 69,
       "doublesRank": 87
     },
     {
       "id": "malamar",
       "nameZh": "乌贼王",
       "nameEn": "Malamar",
-      "singlesRank": 157,
+      "singlesRank": 156,
       "doublesRank": 88
     },
     {
-      "id": "snorlax",
-      "nameZh": "卡比兽",
-      "nameEn": "Snorlax",
-      "singlesRank": 70,
+      "id": "goodrahisui",
+      "nameZh": "黏美龙（洗翠的样子）",
+      "nameEn": "Goodra-Hisui",
+      "singlesRank": 52,
       "doublesRank": 89
     },
     {
@@ -662,7 +669,7 @@
       "id": "oranguru",
       "nameZh": "智挥猩",
       "nameEn": "Oranguru",
-      "singlesRank": 257,
+      "singlesRank": 258,
       "doublesRank": 92
     },
     {
@@ -673,129 +680,129 @@
       "doublesRank": 93
     },
     {
+      "id": "empoleon",
+      "nameZh": "帝王拿波",
+      "nameEn": "Empoleon",
+      "singlesRank": 44,
+      "doublesRank": 94
+    },
+    {
       "id": "pyroar",
       "nameZh": "火炎狮",
       "nameEn": "Pyroar",
       "singlesRank": 123,
-      "doublesRank": 94
-    },
-    {
-      "id": "empoleon",
-      "nameZh": "帝王拿波",
-      "nameEn": "Empoleon",
-      "singlesRank": 43,
       "doublesRank": 95
-    },
-    {
-      "id": "meowsticf",
-      "nameZh": "超能妙喵（雌性的样子）",
-      "nameEn": "Meowstic-F",
-      "singlesRank": 233,
-      "doublesRank": 96
-    },
-    {
-      "id": "ninetales",
-      "nameZh": "九尾",
-      "nameEn": "Ninetales",
-      "singlesRank": 175,
-      "doublesRank": 97
     },
     {
       "id": "gyarados",
       "nameZh": "暴鲤龙",
       "nameEn": "Gyarados",
       "singlesRank": 21,
+      "doublesRank": 96
+    },
+    {
+      "id": "ninetales",
+      "nameZh": "九尾",
+      "nameEn": "Ninetales",
+      "singlesRank": 176,
+      "doublesRank": 97
+    },
+    {
+      "id": "meowsticf",
+      "nameZh": "超能妙喵（雌性的样子）",
+      "nameEn": "Meowstic-F",
+      "singlesRank": 234,
       "doublesRank": 98
     },
     {
       "id": "alcremie",
       "nameZh": "霜奶仙",
       "nameEn": "Alcremie",
-      "singlesRank": 188,
+      "singlesRank": 187,
       "doublesRank": 99
     },
     {
       "id": "altaria",
       "nameZh": "七夕青鸟",
       "nameEn": "Altaria",
-      "singlesRank": 127,
+      "singlesRank": 125,
       "doublesRank": 100
     },
     {
       "id": "pincurchin",
       "nameZh": "啪嚓海胆",
       "nameEn": "Pincurchin",
-      "singlesRank": 149,
+      "singlesRank": 150,
       "doublesRank": 101
+    },
+    {
+      "id": "bellibolt",
+      "nameZh": "电肚蛙",
+      "nameEn": "Bellibolt",
+      "singlesRank": 54,
+      "doublesRank": 102
     },
     {
       "id": "aegislash",
       "nameZh": "坚盾剑怪",
       "nameEn": "Aegislash",
       "singlesRank": 31,
-      "doublesRank": 102
-    },
-    {
-      "id": "bellibolt",
-      "nameZh": "电肚蛙",
-      "nameEn": "Bellibolt",
-      "singlesRank": 53,
       "doublesRank": 103
     },
     {
-      "id": "mamoswine",
-      "nameZh": "象牙猪",
-      "nameEn": "Mamoswine",
-      "singlesRank": 69,
+      "id": "sirfetchd",
+      "nameZh": "葱游兵",
+      "nameEn": "Sirfetch’d",
+      "singlesRank": 104,
       "doublesRank": 104
+    },
+    {
+      "id": "hawlucha",
+      "nameZh": "摔角鹰人",
+      "nameEn": "Hawlucha",
+      "singlesRank": 131,
+      "doublesRank": 105
     },
     {
       "id": "araquanid",
       "nameZh": "滴蛛霸",
       "nameEn": "Araquanid",
       "singlesRank": 79,
-      "doublesRank": 105
+      "doublesRank": 106
     },
     {
-      "id": "sirfetchd",
-      "nameZh": "葱游兵",
-      "nameEn": "Sirfetch’d",
-      "singlesRank": 106,
-      "doublesRank": 106
+      "id": "mamoswine",
+      "nameZh": "象牙猪",
+      "nameEn": "Mamoswine",
+      "singlesRank": 70,
+      "doublesRank": 107
     },
     {
       "id": "starmie",
       "nameZh": "宝石海星",
       "nameEn": "Starmie",
-      "singlesRank": 58,
-      "doublesRank": 107
-    },
-    {
-      "id": "hawlucha",
-      "nameZh": "摔角鹰人",
-      "nameEn": "Hawlucha",
-      "singlesRank": 132,
+      "singlesRank": 57,
       "doublesRank": 108
-    },
-    {
-      "id": "samurotthisui",
-      "nameZh": "大剑鬼（洗翠的样子）",
-      "nameEn": "Samurott-Hisui",
-      "singlesRank": 41,
-      "doublesRank": 109
-    },
-    {
-      "id": "lopunny",
-      "nameZh": "长耳兔",
-      "nameEn": "Lopunny",
-      "singlesRank": 67,
-      "doublesRank": 110
     },
     {
       "id": "hippowdon",
       "nameZh": "河马兽",
       "nameEn": "Hippowdon",
       "singlesRank": 4,
+      "doublesRank": 109
+    },
+    {
+      "id": "samurotthisui",
+      "nameZh": "大剑鬼（洗翠的样子）",
+      "nameEn": "Samurott-Hisui",
+      "singlesRank": 41,
+      "doublesRank": 110
+    },
+    {
+      "id": "lopunny",
+      "nameZh": "长耳兔",
+      "nameEn": "Lopunny",
+      "singlesRank": 67,
       "doublesRank": 111
     },
     {
@@ -806,24 +813,24 @@
       "doublesRank": 112
     },
     {
-      "id": "toxtricity",
-      "nameZh": "颤弦蝾螈（高调的样子）",
-      "nameEn": "Toxtricity",
-      "singlesRank": 107,
-      "doublesRank": 113
-    },
-    {
       "id": "umbreon",
       "nameZh": "月亮伊布",
       "nameEn": "Umbreon",
       "singlesRank": 25,
-      "doublesRank": 114
+      "doublesRank": 113
     },
     {
       "id": "tinkaton",
       "nameZh": "巨锻匠",
       "nameEn": "Tinkaton",
       "singlesRank": 89,
+      "doublesRank": 114
+    },
+    {
+      "id": "toxtricity",
+      "nameZh": "颤弦蝾螈（高调的样子）",
+      "nameEn": "Toxtricity",
+      "singlesRank": 107,
       "doublesRank": 115
     },
     {
@@ -837,14 +844,14 @@
       "id": "vanilluxe",
       "nameZh": "双倍多多冰",
       "nameEn": "Vanilluxe",
-      "singlesRank": 57,
+      "singlesRank": 58,
       "doublesRank": 117
     },
     {
       "id": "meowstic",
       "nameZh": "超能妙喵（雄性的样子）",
       "nameEn": "Meowstic",
-      "singlesRank": 205,
+      "singlesRank": 206,
       "doublesRank": 118
     },
     {
@@ -858,7 +865,7 @@
       "id": "jolteon",
       "nameZh": "雷伊布",
       "nameEn": "Jolteon",
-      "singlesRank": 161,
+      "singlesRank": 160,
       "doublesRank": 120
     },
     {
@@ -879,14 +886,14 @@
       "id": "golurk",
       "nameZh": "泥偶巨人",
       "nameEn": "Golurk",
-      "singlesRank": 189,
+      "singlesRank": 190,
       "doublesRank": 123
     },
     {
       "id": "audino",
       "nameZh": "差不多娃娃",
       "nameEn": "Audino",
-      "singlesRank": 198,
+      "singlesRank": 196,
       "doublesRank": 124
     },
     {
@@ -897,24 +904,24 @@
       "doublesRank": 125
     },
     {
-      "id": "houndoom",
-      "nameZh": "黑鲁加",
-      "nameEn": "Houndoom",
-      "singlesRank": 176,
-      "doublesRank": 126
-    },
-    {
       "id": "lycanrocdusk",
       "nameZh": "鬃岩狼人（黄昏的样子）",
       "nameEn": "Lycanroc-Dusk",
       "singlesRank": 139,
+      "doublesRank": 126
+    },
+    {
+      "id": "houndoom",
+      "nameZh": "黑鲁加",
+      "nameEn": "Houndoom",
+      "singlesRank": 175,
       "doublesRank": 127
     },
     {
-      "id": "wyrdeer",
-      "nameZh": "诡角鹿",
-      "nameEn": "Wyrdeer",
-      "singlesRank": 227,
+      "id": "aggron",
+      "nameZh": "波士可多拉",
+      "nameEn": "Aggron",
+      "singlesRank": 100,
       "doublesRank": 128
     },
     {
@@ -925,66 +932,66 @@
       "doublesRank": 129
     },
     {
-      "id": "aggron",
-      "nameZh": "波士可多拉",
-      "nameEn": "Aggron",
-      "singlesRank": 100,
+      "id": "wyrdeer",
+      "nameZh": "诡角鹿",
+      "nameEn": "Wyrdeer",
+      "singlesRank": 227,
       "doublesRank": 130
+    },
+    {
+      "id": "eelektross",
+      "nameZh": "麻麻鳗鱼王",
+      "nameEn": "Eelektross",
+      "singlesRank": 112,
+      "doublesRank": 131
     },
     {
       "id": "heliolisk",
       "nameZh": "光电伞蜥",
       "nameEn": "Heliolisk",
       "singlesRank": 136,
-      "doublesRank": 131
+      "doublesRank": 132
     },
     {
       "id": "arcanine",
       "nameZh": "风速狗",
       "nameEn": "Arcanine",
       "singlesRank": 133,
-      "doublesRank": 132
-    },
-    {
-      "id": "eelektross",
-      "nameZh": "麻麻鳗鱼王",
-      "nameEn": "Eelektross",
-      "singlesRank": 114,
       "doublesRank": 133
-    },
-    {
-      "id": "chesnaught",
-      "nameZh": "布里卡隆",
-      "nameEn": "Chesnaught",
-      "singlesRank": 162,
-      "doublesRank": 134
-    },
-    {
-      "id": "slowbro",
-      "nameZh": "呆壳兽",
-      "nameEn": "Slowbro",
-      "singlesRank": 101,
-      "doublesRank": 135
-    },
-    {
-      "id": "ampharos",
-      "nameZh": "电龙",
-      "nameEn": "Ampharos",
-      "singlesRank": 146,
-      "doublesRank": 136
     },
     {
       "id": "serperior",
       "nameZh": "君主蛇",
       "nameEn": "Serperior",
       "singlesRank": 97,
+      "doublesRank": 134
+    },
+    {
+      "id": "ampharos",
+      "nameZh": "电龙",
+      "nameEn": "Ampharos",
+      "singlesRank": 147,
+      "doublesRank": 135
+    },
+    {
+      "id": "chesnaught",
+      "nameZh": "布里卡隆",
+      "nameEn": "Chesnaught",
+      "singlesRank": 162,
+      "doublesRank": 136
+    },
+    {
+      "id": "slowbro",
+      "nameZh": "呆壳兽",
+      "nameEn": "Slowbro",
+      "singlesRank": 102,
       "doublesRank": 137
     },
     {
       "id": "steelix",
       "nameZh": "大钢蛇",
       "nameEn": "Steelix",
-      "singlesRank": 170,
+      "singlesRank": 171,
       "doublesRank": 138
     },
     {
@@ -995,31 +1002,31 @@
       "doublesRank": 139
     },
     {
-      "id": "ditto",
-      "nameZh": "百变怪",
-      "nameEn": "Ditto",
-      "singlesRank": 63,
+      "id": "manectric",
+      "nameZh": "雷电兽",
+      "nameEn": "Manectric",
+      "singlesRank": 185,
       "doublesRank": 140
-    },
-    {
-      "id": "toxtricitylowkey",
-      "nameZh": "颤弦蝾螈（低调的样子）",
-      "nameEn": "Toxtricity-Low-Key",
-      "singlesRank": 130,
-      "doublesRank": 141
     },
     {
       "id": "clawitzer",
       "nameZh": "钢炮臂虾",
       "nameEn": "Clawitzer",
       "singlesRank": 182,
+      "doublesRank": 141
+    },
+    {
+      "id": "ditto",
+      "nameZh": "百变怪",
+      "nameEn": "Ditto",
+      "singlesRank": 63,
       "doublesRank": 142
     },
     {
-      "id": "manectric",
-      "nameZh": "雷电兽",
-      "nameEn": "Manectric",
-      "singlesRank": 185,
+      "id": "toxtricitylowkey",
+      "nameZh": "颤弦蝾螈（低调的样子）",
+      "nameEn": "Toxtricity-Low-Key",
+      "singlesRank": 130,
       "doublesRank": 143
     },
     {
@@ -1030,24 +1037,24 @@
       "doublesRank": 144
     },
     {
+      "id": "glaceon",
+      "nameZh": "冰伊布",
+      "nameEn": "Glaceon",
+      "singlesRank": 145,
+      "doublesRank": 145
+    },
+    {
       "id": "houndstone",
       "nameZh": "墓扬犬",
       "nameEn": "Houndstone",
-      "singlesRank": 112,
-      "doublesRank": 145
+      "singlesRank": 113,
+      "doublesRank": 146
     },
     {
       "id": "feraligatr",
       "nameZh": "大力鳄",
       "nameEn": "Feraligatr",
       "singlesRank": 141,
-      "doublesRank": 146
-    },
-    {
-      "id": "glaceon",
-      "nameZh": "冰伊布",
-      "nameEn": "Glaceon",
-      "singlesRank": 145,
       "doublesRank": 147
     },
     {
@@ -1072,17 +1079,17 @@
       "doublesRank": 150
     },
     {
-      "id": "noivern",
-      "nameZh": "音波龙",
-      "nameEn": "Noivern",
-      "singlesRank": 169,
-      "doublesRank": 151
-    },
-    {
       "id": "espeon",
       "nameZh": "太阳伊布",
       "nameEn": "Espeon",
       "singlesRank": 93,
+      "doublesRank": 151
+    },
+    {
+      "id": "noivern",
+      "nameZh": "音波龙",
+      "nameEn": "Noivern",
+      "singlesRank": 168,
       "doublesRank": 152
     },
     {
@@ -1100,17 +1107,17 @@
       "doublesRank": 154
     },
     {
-      "id": "decidueyehisui",
-      "nameZh": "狙射树枭（洗翠的样子）",
-      "nameEn": "Decidueye-Hisui",
-      "singlesRank": 151,
-      "doublesRank": 155
-    },
-    {
       "id": "heracross",
       "nameZh": "赫拉克罗斯",
       "nameEn": "Heracross",
       "singlesRank": 103,
+      "doublesRank": 155
+    },
+    {
+      "id": "decidueyehisui",
+      "nameZh": "狙射树枭（洗翠的样子）",
+      "nameEn": "Decidueye-Hisui",
+      "singlesRank": 151,
       "doublesRank": 156
     },
     {
@@ -1124,21 +1131,21 @@
       "id": "raichualola",
       "nameZh": "雷丘（阿罗拉的样子）",
       "nameEn": "Raichu-Alola",
-      "singlesRank": 215,
+      "singlesRank": 216,
       "doublesRank": 158
-    },
-    {
-      "id": "medicham",
-      "nameZh": "恰雷姆",
-      "nameEn": "Medicham",
-      "singlesRank": 158,
-      "doublesRank": 159
     },
     {
       "id": "salazzle",
       "nameZh": "焰后蜥",
       "nameEn": "Salazzle",
       "singlesRank": 129,
+      "doublesRank": 159
+    },
+    {
+      "id": "medicham",
+      "nameZh": "恰雷姆",
+      "nameEn": "Medicham",
+      "singlesRank": 158,
       "doublesRank": 160
     },
     {
@@ -1163,17 +1170,17 @@
       "doublesRank": 163
     },
     {
-      "id": "torterra",
-      "nameZh": "土台龟",
-      "nameEn": "Torterra",
-      "singlesRank": 166,
-      "doublesRank": 164
-    },
-    {
       "id": "cofagrigus",
       "nameZh": "迭失棺",
       "nameEn": "Cofagrigus",
       "singlesRank": 152,
+      "doublesRank": 164
+    },
+    {
+      "id": "torterra",
+      "nameZh": "土台龟",
+      "nameEn": "Torterra",
+      "singlesRank": 166,
       "doublesRank": 165
     },
     {
@@ -1205,17 +1212,17 @@
       "doublesRank": 169
     },
     {
-      "id": "zoroark",
-      "nameZh": "索罗亚克",
-      "nameEn": "Zoroark",
-      "singlesRank": 173,
+      "id": "beedrill",
+      "nameZh": "大针蜂",
+      "nameEn": "Beedrill",
+      "singlesRank": 161,
       "doublesRank": 170
     },
     {
-      "id": "machamp",
-      "nameZh": "怪力",
-      "nameEn": "Machamp",
-      "singlesRank": 186,
+      "id": "zoroark",
+      "nameZh": "索罗亚克",
+      "nameEn": "Zoroark",
+      "singlesRank": 174,
       "doublesRank": 171
     },
     {
@@ -1226,17 +1233,17 @@
       "doublesRank": 172
     },
     {
+      "id": "machamp",
+      "nameZh": "怪力",
+      "nameEn": "Machamp",
+      "singlesRank": 186,
+      "doublesRank": 173
+    },
+    {
       "id": "banette",
       "nameZh": "诅咒娃娃",
       "nameEn": "Banette",
       "singlesRank": 60,
-      "doublesRank": 173
-    },
-    {
-      "id": "beedrill",
-      "nameZh": "大针蜂",
-      "nameEn": "Beedrill",
-      "singlesRank": 160,
       "doublesRank": 174
     },
     {
@@ -1250,28 +1257,28 @@
       "id": "glalie",
       "nameZh": "冰鬼护",
       "nameEn": "Glalie",
-      "singlesRank": 144,
+      "singlesRank": 143,
       "doublesRank": 176
+    },
+    {
+      "id": "mrrime",
+      "nameZh": "踏冰人偶",
+      "nameEn": "Mr. Rime",
+      "singlesRank": 225,
+      "doublesRank": 177
+    },
+    {
+      "id": "reuniclus",
+      "nameZh": "人造细胞卵",
+      "nameEn": "Reuniclus",
+      "singlesRank": 109,
+      "doublesRank": 178
     },
     {
       "id": "morpeko",
       "nameZh": "莫鲁贝可",
       "nameEn": "Morpeko",
       "singlesRank": 165,
-      "doublesRank": 177
-    },
-    {
-      "id": "mrrime",
-      "nameZh": "踏冰人偶",
-      "nameEn": "Mr. Rime",
-      "singlesRank": 223,
-      "doublesRank": 178
-    },
-    {
-      "id": "taurospaldeablaze",
-      "nameZh": "肯泰罗（帕底亚的样子·火炽种）",
-      "nameEn": "Tauros-Paldea-Blaze",
-      "singlesRank": 131,
       "doublesRank": 179
     },
     {
@@ -1282,17 +1289,17 @@
       "doublesRank": 180
     },
     {
-      "id": "reuniclus",
-      "nameZh": "人造细胞卵",
-      "nameEn": "Reuniclus",
-      "singlesRank": 105,
+      "id": "taurospaldeablaze",
+      "nameZh": "肯泰罗（帕底亚的样子·火炽种）",
+      "nameEn": "Tauros-Paldea-Blaze",
+      "singlesRank": 132,
       "doublesRank": 181
     },
     {
       "id": "persianalola",
       "nameZh": "猫老大（阿罗拉的样子）",
       "nameEn": "Persian-Alola",
-      "singlesRank": 143,
+      "singlesRank": 144,
       "doublesRank": 182
     },
     {
@@ -1317,17 +1324,17 @@
       "doublesRank": 185
     },
     {
+      "id": "taurospaldeaaqua",
+      "nameZh": "肯泰罗（帕底亚的样子·水澜种）",
+      "nameEn": "Tauros-Paldea-Aqua",
+      "singlesRank": 220,
+      "doublesRank": 186
+    },
+    {
       "id": "sharpedo",
       "nameZh": "巨牙鲨",
       "nameEn": "Sharpedo",
       "singlesRank": 128,
-      "doublesRank": 186
-    },
-    {
-      "id": "taurospaldeaaqua",
-      "nameZh": "肯泰罗（帕底亚的样子·水澜种）",
-      "nameEn": "Tauros-Paldea-Aqua",
-      "singlesRank": 219,
       "doublesRank": 187
     },
     {
@@ -1345,115 +1352,115 @@
       "doublesRank": 189
     },
     {
-      "id": "slurpuff",
-      "nameZh": "胖甜妮",
-      "nameEn": "Slurpuff",
-      "singlesRank": 108,
-      "doublesRank": 190
-    },
-    {
-      "id": "emboar",
-      "nameZh": "炎武王",
-      "nameEn": "Emboar",
-      "singlesRank": 172,
-      "doublesRank": 191
-    },
-    {
       "id": "beartic",
       "nameZh": "冻原熊",
       "nameEn": "Beartic",
-      "singlesRank": 211,
-      "doublesRank": 192
+      "singlesRank": 212,
+      "doublesRank": 190
     },
     {
       "id": "pikachu",
       "nameZh": "皮卡丘",
       "nameEn": "Pikachu",
       "singlesRank": 180,
+      "doublesRank": 191
+    },
+    {
+      "id": "slurpuff",
+      "nameZh": "胖甜妮",
+      "nameEn": "Slurpuff",
+      "singlesRank": 110,
+      "doublesRank": 192
+    },
+    {
+      "id": "pidgeot",
+      "nameZh": "大比鸟",
+      "nameEn": "Pidgeot",
+      "singlesRank": 173,
       "doublesRank": 193
     },
     {
       "id": "leafeon",
       "nameZh": "叶伊布",
       "nameEn": "Leafeon",
-      "singlesRank": 220,
+      "singlesRank": 215,
       "doublesRank": 194
+    },
+    {
+      "id": "florges",
+      "nameZh": "花洁夫人",
+      "nameEn": "Florges",
+      "singlesRank": 197,
+      "doublesRank": 195
+    },
+    {
+      "id": "emboar",
+      "nameZh": "炎武王",
+      "nameEn": "Emboar",
+      "singlesRank": 172,
+      "doublesRank": 196
     },
     {
       "id": "victreebel",
       "nameZh": "大食花",
       "nameEn": "Victreebel",
       "singlesRank": 78,
-      "doublesRank": 195
-    },
-    {
-      "id": "florges",
-      "nameZh": "花洁夫人",
-      "nameEn": "Florges",
-      "singlesRank": 196,
-      "doublesRank": 196
+      "doublesRank": 197
     },
     {
       "id": "chimecho",
       "nameZh": "风铃铃",
       "nameEn": "Chimecho",
       "singlesRank": 142,
-      "doublesRank": 197
-    },
-    {
-      "id": "pidgeot",
-      "nameZh": "大比鸟",
-      "nameEn": "Pidgeot",
-      "singlesRank": 174,
       "doublesRank": 198
-    },
-    {
-      "id": "rampardos",
-      "nameZh": "战槌龙",
-      "nameEn": "Rampardos",
-      "singlesRank": 225,
-      "doublesRank": 199
     },
     {
       "id": "orthworm",
       "nameZh": "拖拖蚓",
       "nameEn": "Orthworm",
-      "singlesRank": 104,
+      "singlesRank": 105,
+      "doublesRank": 199
+    },
+    {
+      "id": "rampardos",
+      "nameZh": "战槌龙",
+      "nameEn": "Rampardos",
+      "singlesRank": 224,
       "doublesRank": 200
     },
     {
       "id": "wigglytuff",
       "nameZh": "胖可丁",
       "nameEn": "Wigglytuff",
-      "singlesRank": 203,
+      "singlesRank": 202,
       "doublesRank": 201
     },
     {
       "id": "rotomfrost",
       "nameZh": "结冰洛托姆",
       "nameEn": "Rotom-Frost",
-      "singlesRank": 218,
+      "singlesRank": 219,
       "doublesRank": 202
+    },
+    {
+      "id": "trevenant",
+      "nameZh": "朽木妖",
+      "nameEn": "Trevenant",
+      "singlesRank": 201,
+      "doublesRank": 203
     },
     {
       "id": "perrserker",
       "nameZh": "喵头目",
       "nameEn": "Perrserker",
       "singlesRank": 247,
-      "doublesRank": 203
-    },
-    {
-      "id": "trevenant",
-      "nameZh": "朽木妖",
-      "nameEn": "Trevenant",
-      "singlesRank": 202,
       "doublesRank": 204
     },
     {
-      "id": "lycanroc",
-      "nameZh": "鬃岩狼人",
-      "nameEn": "Lycanroc",
-      "singlesRank": 251,
+      "id": "goodra",
+      "nameZh": "黏美龙",
+      "nameEn": "Goodra",
+      "singlesRank": 184,
       "doublesRank": 205
     },
     {
@@ -1464,66 +1471,66 @@
       "doublesRank": 206
     },
     {
-      "id": "goodra",
-      "nameZh": "黏美龙",
-      "nameEn": "Goodra",
-      "singlesRank": 184,
+      "id": "lycanroc",
+      "nameZh": "鬃岩狼人",
+      "nameEn": "Lycanroc",
+      "singlesRank": 251,
       "doublesRank": 207
     },
     {
       "id": "toxicroak",
       "nameZh": "毒骷蛙",
       "nameEn": "Toxicroak",
-      "singlesRank": 224,
+      "singlesRank": 223,
       "doublesRank": 208
     },
     {
       "id": "pangoro",
       "nameZh": "霸道熊猫",
       "nameEn": "Pangoro",
-      "singlesRank": 210,
+      "singlesRank": 211,
       "doublesRank": 209
-    },
-    {
-      "id": "squawkabillyyellow",
-      "nameZh": "怒鹦哥（黄羽毛）",
-      "nameEn": "Squawkabilly-Yellow",
-      "singlesRank": 236,
-      "doublesRank": 210
-    },
-    {
-      "id": "squawkabilly",
-      "nameZh": "怒鹦哥",
-      "nameEn": "Squawkabilly",
-      "singlesRank": 231,
-      "doublesRank": 211
     },
     {
       "id": "tyrantrum",
       "nameZh": "怪颚龙",
       "nameEn": "Tyrantrum",
       "singlesRank": 217,
-      "doublesRank": 212
+      "doublesRank": 210
     },
     {
       "id": "musharna",
       "nameZh": "梦梦蚀",
       "nameEn": "Musharna",
       "singlesRank": 214,
+      "doublesRank": 211
+    },
+    {
+      "id": "squawkabilly",
+      "nameZh": "怒鹦哥",
+      "nameEn": "Squawkabilly",
+      "singlesRank": 231,
+      "doublesRank": 212
+    },
+    {
+      "id": "squawkabillyyellow",
+      "nameZh": "怒鹦哥（黄羽毛）",
+      "nameEn": "Squawkabilly-Yellow",
+      "singlesRank": 236,
       "doublesRank": 213
     },
     {
       "id": "avalugghisui",
       "nameZh": "冰岩怪（洗翠的样子）",
       "nameEn": "Avalugg-Hisui",
-      "singlesRank": 206,
+      "singlesRank": 207,
       "doublesRank": 214
     },
     {
       "id": "bastiodon",
       "nameZh": "护城龙",
       "nameEn": "Bastiodon",
-      "singlesRank": 191,
+      "singlesRank": 188,
       "doublesRank": 215
     },
     {
@@ -1534,52 +1541,52 @@
       "doublesRank": 216
     },
     {
-      "id": "diggersby",
-      "nameZh": "掘地兔",
-      "nameEn": "Diggersby",
-      "singlesRank": 124,
-      "doublesRank": 217
-    },
-    {
       "id": "polteageist",
       "nameZh": "怖思壶",
       "nameEn": "Polteageist",
       "singlesRank": 86,
-      "doublesRank": 218
+      "doublesRank": 217
     },
     {
       "id": "roserade",
       "nameZh": "罗丝雷朵",
       "nameEn": "Roserade",
       "singlesRank": 155,
+      "doublesRank": 218
+    },
+    {
+      "id": "diggersby",
+      "nameZh": "掘地兔",
+      "nameEn": "Diggersby",
+      "singlesRank": 124,
       "doublesRank": 219
     },
     {
       "id": "pinsir",
       "nameZh": "凯罗斯",
       "nameEn": "Pinsir",
-      "singlesRank": 168,
+      "singlesRank": 170,
       "doublesRank": 220
-    },
-    {
-      "id": "luxray",
-      "nameZh": "伦琴猫",
-      "nameEn": "Luxray",
-      "singlesRank": 201,
-      "doublesRank": 221
-    },
-    {
-      "id": "flareon",
-      "nameZh": "火伊布",
-      "nameEn": "Flareon",
-      "singlesRank": 212,
-      "doublesRank": 222
     },
     {
       "id": "toucannon",
       "nameZh": "铳嘴大鸟",
       "nameEn": "Toucannon",
       "singlesRank": 94,
+      "doublesRank": 221
+    },
+    {
+      "id": "luxray",
+      "nameZh": "伦琴猫",
+      "nameEn": "Luxray",
+      "singlesRank": 203,
+      "doublesRank": 222
+    },
+    {
+      "id": "flareon",
+      "nameZh": "火伊布",
+      "nameEn": "Flareon",
+      "singlesRank": 210,
       "doublesRank": 223
     },
     {
@@ -1593,112 +1600,112 @@
       "id": "barbaracle",
       "nameZh": "龟足巨铠",
       "nameEn": "Barbaracle",
-      "singlesRank": 156,
+      "singlesRank": 157,
       "doublesRank": 225
-    },
-    {
-      "id": "farfetchd",
-      "nameZh": "大葱鸭",
-      "nameEn": "Farfetch’d",
-      "singlesRank": 250,
-      "doublesRank": 226
-    },
-    {
-      "id": "gogoat",
-      "nameZh": "坐骑山羊",
-      "nameEn": "Gogoat",
-      "singlesRank": 245,
-      "doublesRank": 227
-    },
-    {
-      "id": "thievul",
-      "nameZh": "猾大狐",
-      "nameEn": "Thievul",
-      "singlesRank": 242,
-      "doublesRank": 228
-    },
-    {
-      "id": "passimian",
-      "nameZh": "投掷猴",
-      "nameEn": "Passimian",
-      "singlesRank": 260,
-      "doublesRank": 229
     },
     {
       "id": "gourgeistsuper",
       "nameZh": "南瓜怪人（巨颗种）",
       "nameEn": "Gourgeist-Super",
       "singlesRank": 229,
+      "doublesRank": 226
+    },
+    {
+      "id": "passimian",
+      "nameZh": "投掷猴",
+      "nameEn": "Passimian",
+      "singlesRank": 260,
+      "doublesRank": 227
+    },
+    {
+      "id": "gogoat",
+      "nameZh": "坐骑山羊",
+      "nameEn": "Gogoat",
+      "singlesRank": 244,
+      "doublesRank": 228
+    },
+    {
+      "id": "thievul",
+      "nameZh": "猾大狐",
+      "nameEn": "Thievul",
+      "singlesRank": 242,
+      "doublesRank": 229
+    },
+    {
+      "id": "farfetchd",
+      "nameZh": "大葱鸭",
+      "nameEn": "Farfetch’d",
+      "singlesRank": 250,
       "doublesRank": 230
     },
     {
       "id": "rotommow",
       "nameZh": "切割洛托姆",
       "nameEn": "Rotom-Mow",
-      "singlesRank": 187,
+      "singlesRank": 189,
       "doublesRank": 231
     },
     {
       "id": "dedenne",
       "nameZh": "咚咚鼠",
       "nameEn": "Dedenne",
-      "singlesRank": 234,
+      "singlesRank": 235,
       "doublesRank": 232
-    },
-    {
-      "id": "mabosstiff",
-      "nameZh": "獒教父",
-      "nameEn": "Mabosstiff",
-      "singlesRank": 216,
-      "doublesRank": 233
     },
     {
       "id": "emolga",
       "nameZh": "电飞鼠",
       "nameEn": "Emolga",
       "singlesRank": 213,
-      "doublesRank": 234
+      "doublesRank": 233
     },
     {
-      "id": "ariados",
-      "nameZh": "阿利多斯",
-      "nameEn": "Ariados",
-      "singlesRank": 195,
-      "doublesRank": 235
+      "id": "mabosstiff",
+      "nameZh": "獒教父",
+      "nameEn": "Mabosstiff",
+      "singlesRank": 218,
+      "doublesRank": 234
     },
     {
       "id": "flapple",
       "nameZh": "苹裹龙",
       "nameEn": "Flapple",
       "singlesRank": 243,
-      "doublesRank": 236
+      "doublesRank": 235
     },
     {
       "id": "rotomfan",
       "nameZh": "旋转洛托姆",
       "nameEn": "Rotom-Fan",
       "singlesRank": 238,
-      "doublesRank": 237
+      "doublesRank": 236
     },
     {
-      "id": "swalot",
-      "nameZh": "吞食兽",
-      "nameEn": "Swalot",
-      "singlesRank": 200,
-      "doublesRank": 238
+      "id": "ariados",
+      "nameZh": "阿利多斯",
+      "nameEn": "Ariados",
+      "singlesRank": 195,
+      "doublesRank": 237
     },
     {
       "id": "lycanrocmidnight",
       "nameZh": "鬃岩狼人（黑夜的样子）",
       "nameEn": "Lycanroc-Midnight",
       "singlesRank": 252,
+      "doublesRank": 238
+    },
+    {
+      "id": "swalot",
+      "nameZh": "吞食兽",
+      "nameEn": "Swalot",
+      "singlesRank": 200,
       "doublesRank": 239
     },
     {
       "id": "persian",
       "nameZh": "猫老大",
       "nameEn": "Persian",
-      "singlesRank": 244,
+      "singlesRank": 245,
       "doublesRank": 240
     },
     {
@@ -1712,42 +1719,42 @@
       "id": "forretress",
       "nameZh": "佛烈托斯",
       "nameEn": "Forretress",
-      "singlesRank": 171,
+      "singlesRank": 169,
       "doublesRank": 242
+    },
+    {
+      "id": "arbok",
+      "nameZh": "阿柏怪",
+      "nameEn": "Arbok",
+      "singlesRank": 221,
+      "doublesRank": 243
     },
     {
       "id": "sandaconda",
       "nameZh": "沙螺蟒",
       "nameEn": "Sandaconda",
       "singlesRank": 204,
-      "doublesRank": 243
-    },
-    {
-      "id": "arbok",
-      "nameZh": "阿柏怪",
-      "nameEn": "Arbok",
-      "singlesRank": 222,
       "doublesRank": 244
     },
     {
       "id": "rotom",
       "nameZh": "洛托姆",
       "nameEn": "Rotom",
-      "singlesRank": 255,
+      "singlesRank": 256,
       "doublesRank": 245
     },
     {
       "id": "appletun",
       "nameZh": "丰蜜龙",
       "nameEn": "Appletun",
-      "singlesRank": 239,
+      "singlesRank": 241,
       "doublesRank": 246
     },
     {
       "id": "avalugg",
       "nameZh": "冰岩怪",
       "nameEn": "Avalugg",
-      "singlesRank": 197,
+      "singlesRank": 198,
       "doublesRank": 247
     },
     {
@@ -1765,38 +1772,38 @@
       "doublesRank": 249
     },
     {
-      "id": "tauros",
-      "nameZh": "肯泰罗",
-      "nameEn": "Tauros",
-      "singlesRank": 241,
-      "doublesRank": 250
-    },
-    {
       "id": "gourgeistsmall",
       "nameZh": "南瓜怪人（小颗种）",
       "nameEn": "Gourgeist-Small",
       "singlesRank": 259,
-      "doublesRank": 251
+      "doublesRank": 250
     },
     {
       "id": "furfrou",
       "nameZh": "多丽米亚",
       "nameEn": "Furfrou",
       "singlesRank": 226,
+      "doublesRank": 251
+    },
+    {
+      "id": "tauros",
+      "nameZh": "肯泰罗",
+      "nameEn": "Tauros",
+      "singlesRank": 239,
       "doublesRank": 252
     },
     {
       "id": "stunfiskgalar",
       "nameZh": "泥巴鱼（伽勒尔的样子）",
       "nameEn": "Stunfisk-Galar",
-      "singlesRank": 221,
+      "singlesRank": 222,
       "doublesRank": 253
     },
     {
       "id": "garbodor",
       "nameZh": "灰尘山",
       "nameEn": "Garbodor",
-      "singlesRank": 235,
+      "singlesRank": 233,
       "doublesRank": 254
     },
     {
@@ -1810,42 +1817,42 @@
       "id": "gourgeist",
       "nameZh": "南瓜怪人（中颗种）",
       "nameEn": "Gourgeist",
-      "singlesRank": 258,
+      "singlesRank": 257,
       "doublesRank": 256
     },
     {
       "id": "simisear",
       "nameZh": "爆香猿",
       "nameEn": "Simisear",
-      "singlesRank": 254,
+      "singlesRank": 255,
       "doublesRank": 257
     },
     {
       "id": "simisage",
       "nameZh": "花椰猿",
       "nameEn": "Simisage",
-      "singlesRank": 256,
+      "singlesRank": 254,
       "doublesRank": 258
+    },
+    {
+      "id": "gourgeistlarge",
+      "nameZh": "南瓜怪人（大颗种）",
+      "nameEn": "Gourgeist-Large",
+      "singlesRank": 261,
+      "doublesRank": 259
     },
     {
       "id": "taurospaldeacombat",
       "nameZh": "肯泰罗（帕底亚的样子·斗战种）",
       "nameEn": "Tauros-Paldea-Combat",
-      "singlesRank": 261,
-      "doublesRank": 259
+      "singlesRank": 262,
+      "doublesRank": 260
     },
     {
       "id": "watchog",
       "nameZh": "步哨鼠",
       "nameEn": "Watchog",
       "singlesRank": 246,
-      "doublesRank": 260
-    },
-    {
-      "id": "gourgeistlarge",
-      "nameZh": "南瓜怪人（大颗种）",
-      "nameEn": "Gourgeist-Large",
-      "singlesRank": 262,
       "doublesRank": 261
     },
     {
